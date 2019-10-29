@@ -466,10 +466,7 @@ Public Class Frm_Collaborateurs
 
 
     End Sub
-    Private Sub ProcéduresStockéesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProcéduresStockéesToolStripMenuItem.Click
+    Private Sub ProcéduresStockéesToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles ProcéduresStockéesToolStripMenuItem.Click
         Frm_Administrateur.Show()
-    End Sub
-    Private Sub Btn_Employes_Click(sender As Object, e As EventArgs) Handles Btn_Employes.Click
-
     End Sub
 End Class

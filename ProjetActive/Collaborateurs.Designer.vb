@@ -23,10 +23,10 @@ Partial Class Frm_Collaborateurs
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GBx_1 = New System.Windows.Forms.GroupBox()
         Me.Txt_Matricule = New System.Windows.Forms.TextBox()
         Me.Lbl_Matricule = New System.Windows.Forms.Label()
@@ -80,10 +80,6 @@ Partial Class Frm_Collaborateurs
         Me.Cb_Filtre = New System.Windows.Forms.ComboBox()
         Me.Btn_Filtre = New System.Windows.Forms.Button()
         Me.DGV_Collabo = New System.Windows.Forms.DataGridView()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProcéduresStockéesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Btn_Employes = New System.Windows.Forms.Button()
         Me.Panel_Gauche = New System.Windows.Forms.Panel()
         Me.FrmCollaborateursBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -143,6 +139,10 @@ Partial Class Frm_Collaborateurs
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button12 = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdministrateurToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProcéduresStockéesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GBx_1.SuspendLayout()
         Me.GBx_Genre.SuspendLayout()
         Me.GBx_Contrat.SuspendLayout()
@@ -151,7 +151,6 @@ Partial Class Frm_Collaborateurs
         Me.TabP_Collaborateur.SuspendLayout()
         Me.TabP_ListeCollabo.SuspendLayout()
         CType(Me.DGV_Collabo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
         Me.Panel_Gauche.SuspendLayout()
         CType(Me.FrmCollaborateursBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -164,6 +163,7 @@ Partial Class Frm_Collaborateurs
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GBx_1
@@ -796,55 +796,25 @@ Partial Class Frm_Collaborateurs
         '
         Me.DGV_Collabo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.DGV_Collabo.ColumnHeadersHeight = 30
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.CadetBlue
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_Collabo.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.CadetBlue
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_Collabo.DefaultCellStyle = DataGridViewCellStyle13
         Me.DGV_Collabo.GridColor = System.Drawing.SystemColors.ControlLight
         Me.DGV_Collabo.Location = New System.Drawing.Point(67, 96)
         Me.DGV_Collabo.Name = "DGV_Collabo"
         Me.DGV_Collabo.RowHeadersVisible = False
         Me.DGV_Collabo.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        Me.DGV_Collabo.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        Me.DGV_Collabo.RowsDefaultCellStyle = DataGridViewCellStyle14
         Me.DGV_Collabo.RowTemplate.DividerHeight = 1
         Me.DGV_Collabo.RowTemplate.Height = 30
         Me.DGV_Collabo.Size = New System.Drawing.Size(781, 606)
         Me.DGV_Collabo.TabIndex = 0
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.MenuStrip1.Size = New System.Drawing.Size(250, 25)
-        Me.MenuStrip1.TabIndex = 13
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(66, 21)
-        Me.ToolStripMenuItem1.Text = "Options"
-        '
-        'ToolStripMenuItem2
-        '
-        Me.ToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProcéduresStockéesToolStripMenuItem})
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(161, 22)
-        Me.ToolStripMenuItem2.Text = "Administrateur"
-        '
-        'ProcéduresStockéesToolStripMenuItem
-        '
-        Me.ProcéduresStockéesToolStripMenuItem.Name = "ProcéduresStockéesToolStripMenuItem"
-        Me.ProcéduresStockéesToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.ProcéduresStockéesToolStripMenuItem.Text = "Procédures Stockées"
         '
         'Btn_Employes
         '
@@ -853,7 +823,7 @@ Partial Class Frm_Collaborateurs
         Me.Btn_Employes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Employes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Employes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Employes.Location = New System.Drawing.Point(-3, 28)
+        Me.Btn_Employes.Location = New System.Drawing.Point(0, 0)
         Me.Btn_Employes.Name = "Btn_Employes"
         Me.Btn_Employes.Size = New System.Drawing.Size(250, 57)
         Me.Btn_Employes.TabIndex = 12
@@ -863,11 +833,10 @@ Partial Class Frm_Collaborateurs
         'Panel_Gauche
         '
         Me.Panel_Gauche.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel_Gauche.Controls.Add(Me.MenuStrip1)
         Me.Panel_Gauche.Controls.Add(Me.Btn_Employes)
-        Me.Panel_Gauche.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_Gauche.Location = New System.Drawing.Point(0, 42)
         Me.Panel_Gauche.Name = "Panel_Gauche"
-        Me.Panel_Gauche.Size = New System.Drawing.Size(250, 761)
+        Me.Panel_Gauche.Size = New System.Drawing.Size(250, 719)
         Me.Panel_Gauche.TabIndex = 1
         '
         'FrmCollaborateursBindingSource
@@ -886,9 +855,9 @@ Partial Class Frm_Collaborateurs
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Location = New System.Drawing.Point(80, 437)
+        Me.GroupBox1.Location = New System.Drawing.Point(80, 415)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(755, 203)
+        Me.GroupBox1.Size = New System.Drawing.Size(755, 175)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Contrat"
@@ -1179,7 +1148,7 @@ Partial Class Frm_Collaborateurs
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(470, 10)
+        Me.Button4.Location = New System.Drawing.Point(469, 42)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(160, 47)
         Me.Button4.TabIndex = 26
@@ -1205,10 +1174,10 @@ Partial Class Frm_Collaborateurs
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(469, 37)
+        Me.TabControl1.Location = New System.Drawing.Point(469, 68)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(914, 734)
+        Me.TabControl1.Size = New System.Drawing.Size(914, 703)
         Me.TabControl1.TabIndex = 27
         '
         'TabPage1
@@ -1220,7 +1189,7 @@ Partial Class Frm_Collaborateurs
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(906, 708)
+        Me.TabPage1.Size = New System.Drawing.Size(906, 677)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Collaborateur"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -1252,7 +1221,7 @@ Partial Class Frm_Collaborateurs
         Me.GroupBox3.Controls.Add(Me.Label16)
         Me.GroupBox3.Location = New System.Drawing.Point(80, 26)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(755, 395)
+        Me.GroupBox3.Size = New System.Drawing.Size(755, 383)
         Me.GroupBox3.TabIndex = 10
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Coordonnées"
@@ -1365,7 +1334,7 @@ Partial Class Frm_Collaborateurs
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(675, 655)
+        Me.Button6.Location = New System.Drawing.Point(675, 617)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(160, 47)
         Me.Button6.TabIndex = 16
@@ -1380,7 +1349,7 @@ Partial Class Frm_Collaborateurs
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(490, 655)
+        Me.Button7.Location = New System.Drawing.Point(490, 617)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(160, 47)
         Me.Button7.TabIndex = 15
@@ -1451,21 +1420,21 @@ Partial Class Frm_Collaborateurs
         '
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.DataGridView1.ColumnHeadersHeight = 30
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.CadetBlue
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.CadetBlue
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle15
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.ControlLight
         Me.DataGridView1.Location = New System.Drawing.Point(67, 96)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle16
         Me.DataGridView1.RowTemplate.DividerHeight = 1
         Me.DataGridView1.RowTemplate.Height = 30
         Me.DataGridView1.Size = New System.Drawing.Size(781, 606)
@@ -1503,9 +1472,9 @@ Partial Class Frm_Collaborateurs
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Button11)
-        Me.Panel1.Location = New System.Drawing.Point(1, 10)
+        Me.Panel1.Location = New System.Drawing.Point(1, 154)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(250, 761)
+        Me.Panel1.Size = New System.Drawing.Size(250, 617)
         Me.Panel1.TabIndex = 23
         '
         'Button11
@@ -1528,9 +1497,9 @@ Partial Class Frm_Collaborateurs
         Me.Panel2.Controls.Add(Me.Button5)
         Me.Panel2.Controls.Add(Me.Button9)
         Me.Panel2.Controls.Add(Me.Button10)
-        Me.Panel2.Location = New System.Drawing.Point(249, 10)
+        Me.Panel2.Location = New System.Drawing.Point(255, 42)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(219, 761)
+        Me.Panel2.Size = New System.Drawing.Size(210, 729)
         Me.Panel2.TabIndex = 24
         '
         'Button12
@@ -1540,12 +1509,41 @@ Partial Class Frm_Collaborateurs
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.ForeColor = System.Drawing.Color.White
-        Me.Button12.Location = New System.Drawing.Point(631, 11)
+        Me.Button12.Location = New System.Drawing.Point(631, 42)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(160, 47)
         Me.Button12.TabIndex = 25
         Me.Button12.Text = "Liste"
         Me.Button12.UseVisualStyleBackColor = False
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OptionsToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1384, 25)
+        Me.MenuStrip1.TabIndex = 28
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'OptionsToolStripMenuItem
+        '
+        Me.OptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrateurToolStripMenuItem})
+        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(66, 21)
+        Me.OptionsToolStripMenuItem.Text = "Options"
+        '
+        'AdministrateurToolStripMenuItem
+        '
+        Me.AdministrateurToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProcéduresStockéesToolStripMenuItem})
+        Me.AdministrateurToolStripMenuItem.Name = "AdministrateurToolStripMenuItem"
+        Me.AdministrateurToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AdministrateurToolStripMenuItem.Text = "Administrateur"
+        '
+        'ProcéduresStockéesToolStripMenuItem
+        '
+        Me.ProcéduresStockéesToolStripMenuItem.Name = "ProcéduresStockéesToolStripMenuItem"
+        Me.ProcéduresStockéesToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ProcéduresStockéesToolStripMenuItem.Text = "Procédures stockées"
         '
         'Frm_Collaborateurs
         '
@@ -1558,6 +1556,8 @@ Partial Class Frm_Collaborateurs
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel_Gauche)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Frm_Collaborateurs"
         Me.Text = "Collaborateurs"
         Me.GBx_1.ResumeLayout(False)
@@ -1572,10 +1572,7 @@ Partial Class Frm_Collaborateurs
         Me.TabP_ListeCollabo.ResumeLayout(False)
         Me.TabP_ListeCollabo.PerformLayout()
         CType(Me.DGV_Collabo, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.Panel_Gauche.ResumeLayout(False)
-        Me.Panel_Gauche.PerformLayout()
         CType(Me.FrmCollaborateursBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -1591,7 +1588,10 @@ Partial Class Frm_Collaborateurs
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GBx_1 As GroupBox
@@ -1648,10 +1648,6 @@ Partial Class Frm_Collaborateurs
     Friend WithEvents Lbl_Filtre As Label
     Friend WithEvents Btn_Modification As Button
     Friend WithEvents FrmCollaborateursBindingSource As BindingSource
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents ProcéduresStockéesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Btn_Employes As Button
     Friend WithEvents Panel_Gauche As Panel
     Friend WithEvents GroupBox1 As GroupBox
@@ -1710,4 +1706,8 @@ Partial Class Frm_Collaborateurs
     Friend WithEvents Button11 As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button12 As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AdministrateurToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProcéduresStockéesToolStripMenuItem As ToolStripMenuItem
 End Class
