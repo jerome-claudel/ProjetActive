@@ -25,12 +25,14 @@ Partial Class Frm_Collaborateurs
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel_droite = New System.Windows.Forms.Panel()
+        Me.Btn_Modification = New System.Windows.Forms.Button()
         Me.Btn_Creation = New System.Windows.Forms.Button()
         Me.Btn_Consultation = New System.Windows.Forms.Button()
         Me.Panel_Gauche = New System.Windows.Forms.Panel()
         Me.Btn_Employes = New System.Windows.Forms.Button()
         Me.TabCtrl_Collabo = New System.Windows.Forms.TabControl()
         Me.TabP_Collaborateur = New System.Windows.Forms.TabPage()
+        Me.Btn_Valider = New System.Windows.Forms.Button()
         Me.GBx_1 = New System.Windows.Forms.GroupBox()
         Me.Txt_Matricule = New System.Windows.Forms.TextBox()
         Me.Lbl_Matricule = New System.Windows.Forms.Label()
@@ -58,7 +60,6 @@ Partial Class Frm_Collaborateurs
         Me.Lbl_Prenom = New System.Windows.Forms.Label()
         Me.Lbl_Login = New System.Windows.Forms.Label()
         Me.Btn_Annuler = New System.Windows.Forms.Button()
-        Me.Btn_Valider = New System.Windows.Forms.Button()
         Me.GBx_Contrat = New System.Windows.Forms.GroupBox()
         Me.Lbl_Fonction = New System.Windows.Forms.Label()
         Me.Cbx_Fonction = New System.Windows.Forms.ComboBox()
@@ -77,8 +78,7 @@ Partial Class Frm_Collaborateurs
         Me.Cb_Filtre = New System.Windows.Forms.ComboBox()
         Me.Btn_Filtre = New System.Windows.Forms.Button()
         Me.Btn_Liste = New System.Windows.Forms.Button()
-        Me.Btn_Fiche_Collaborateur = New System.Windows.Forms.Button()
-        Me.Btn_Modification = New System.Windows.Forms.Button()
+        Me.Btn_Fiche_Collabo = New System.Windows.Forms.Button()
         Me.Panel_droite.SuspendLayout()
         Me.Panel_Gauche.SuspendLayout()
         Me.TabCtrl_Collabo.SuspendLayout()
@@ -100,6 +100,21 @@ Partial Class Frm_Collaborateurs
         Me.Panel_droite.Name = "Panel_droite"
         Me.Panel_droite.Size = New System.Drawing.Size(219, 761)
         Me.Panel_droite.TabIndex = 31
+        '
+        'Btn_Modification
+        '
+        Me.Btn_Modification.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Modification.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Modification.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Modification.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Modification.ForeColor = System.Drawing.Color.White
+        Me.Btn_Modification.Location = New System.Drawing.Point(33, 256)
+        Me.Btn_Modification.Name = "Btn_Modification"
+        Me.Btn_Modification.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Modification.TabIndex = 16
+        Me.Btn_Modification.Text = "Modification"
+        Me.Btn_Modification.UseVisualStyleBackColor = False
+        Me.Btn_Modification.Visible = False
         '
         'Btn_Creation
         '
@@ -176,6 +191,21 @@ Partial Class Frm_Collaborateurs
         Me.TabP_Collaborateur.Text = "Collaborateur"
         Me.TabP_Collaborateur.UseVisualStyleBackColor = True
         '
+        'Btn_Valider
+        '
+        Me.Btn_Valider.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Valider.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Valider.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Valider.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Valider.ForeColor = System.Drawing.Color.White
+        Me.Btn_Valider.Location = New System.Drawing.Point(490, 623)
+        Me.Btn_Valider.Name = "Btn_Valider"
+        Me.Btn_Valider.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Valider.TabIndex = 15
+        Me.Btn_Valider.Text = "Valider"
+        Me.Btn_Valider.UseVisualStyleBackColor = False
+        Me.Btn_Valider.Visible = False
+        '
         'GBx_1
         '
         Me.GBx_1.Controls.Add(Me.Txt_Matricule)
@@ -235,7 +265,7 @@ Partial Class Frm_Collaborateurs
         Me.LstB_Prenoms.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LstB_Prenoms.FormattingEnabled = True
         Me.LstB_Prenoms.ItemHeight = 20
-        Me.LstB_Prenoms.Location = New System.Drawing.Point(426, 90)
+        Me.LstB_Prenoms.Location = New System.Drawing.Point(509, 57)
         Me.LstB_Prenoms.Name = "LstB_Prenoms"
         Me.LstB_Prenoms.Size = New System.Drawing.Size(173, 64)
         Me.LstB_Prenoms.TabIndex = 32
@@ -491,21 +521,6 @@ Partial Class Frm_Collaborateurs
         Me.Btn_Annuler.UseVisualStyleBackColor = False
         Me.Btn_Annuler.Visible = False
         '
-        'Btn_Valider
-        '
-        Me.Btn_Valider.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Valider.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Valider.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Valider.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Valider.ForeColor = System.Drawing.Color.White
-        Me.Btn_Valider.Location = New System.Drawing.Point(490, 623)
-        Me.Btn_Valider.Name = "Btn_Valider"
-        Me.Btn_Valider.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Valider.TabIndex = 15
-        Me.Btn_Valider.Text = "Valider"
-        Me.Btn_Valider.UseVisualStyleBackColor = False
-        Me.Btn_Valider.Visible = False
-        '
         'GBx_Contrat
         '
         Me.GBx_Contrat.Controls.Add(Me.Lbl_Fonction)
@@ -692,7 +707,7 @@ Partial Class Frm_Collaborateurs
         Me.DGV_Collabo.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.DGV_Collabo.RowTemplate.DividerHeight = 1
         Me.DGV_Collabo.RowTemplate.Height = 30
-        Me.DGV_Collabo.Size = New System.Drawing.Size(781, 606)
+        Me.DGV_Collabo.Size = New System.Drawing.Size(781, 584)
         Me.DGV_Collabo.TabIndex = 0
         '
         'Cb_Filtre
@@ -734,41 +749,26 @@ Partial Class Frm_Collaborateurs
         Me.Btn_Liste.Text = "Liste"
         Me.Btn_Liste.UseVisualStyleBackColor = False
         '
-        'Btn_Fiche_Collaborateur
+        'Btn_Fiche_Collabo
         '
-        Me.Btn_Fiche_Collaborateur.BackColor = System.Drawing.Color.White
-        Me.Btn_Fiche_Collaborateur.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Btn_Fiche_Collaborateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Fiche_Collaborateur.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Fiche_Collaborateur.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Fiche_Collaborateur.Location = New System.Drawing.Point(484, 38)
-        Me.Btn_Fiche_Collaborateur.Name = "Btn_Fiche_Collaborateur"
-        Me.Btn_Fiche_Collaborateur.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Fiche_Collaborateur.TabIndex = 38
-        Me.Btn_Fiche_Collaborateur.Text = "Collaborateur"
-        Me.Btn_Fiche_Collaborateur.UseVisualStyleBackColor = False
-        '
-        'Btn_Modification
-        '
-        Me.Btn_Modification.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Modification.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Modification.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Modification.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Modification.ForeColor = System.Drawing.Color.White
-        Me.Btn_Modification.Location = New System.Drawing.Point(33, 256)
-        Me.Btn_Modification.Name = "Btn_Modification"
-        Me.Btn_Modification.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Modification.TabIndex = 16
-        Me.Btn_Modification.Text = "Modification"
-        Me.Btn_Modification.UseVisualStyleBackColor = False
-        Me.Btn_Modification.Visible = False
+        Me.Btn_Fiche_Collabo.BackColor = System.Drawing.Color.White
+        Me.Btn_Fiche_Collabo.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Btn_Fiche_Collabo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Fiche_Collabo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Fiche_Collabo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Fiche_Collabo.Location = New System.Drawing.Point(484, 38)
+        Me.Btn_Fiche_Collabo.Name = "Btn_Fiche_Collabo"
+        Me.Btn_Fiche_Collabo.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Fiche_Collabo.TabIndex = 38
+        Me.Btn_Fiche_Collabo.Text = "Collaborateur"
+        Me.Btn_Fiche_Collabo.UseVisualStyleBackColor = False
         '
         'Frm_Collaborateurs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1447, 824)
-        Me.Controls.Add(Me.Btn_Fiche_Collaborateur)
+        Me.Controls.Add(Me.Btn_Fiche_Collabo)
         Me.Controls.Add(Me.Btn_Liste)
         Me.Controls.Add(Me.TabCtrl_Collabo)
         Me.Controls.Add(Me.Panel_Gauche)
@@ -845,6 +845,6 @@ Partial Class Frm_Collaborateurs
     Friend WithEvents Cb_Filtre As ComboBox
     Friend WithEvents Btn_Filtre As Button
     Friend WithEvents Btn_Liste As Button
-    Friend WithEvents Btn_Fiche_Collaborateur As Button
+    Friend WithEvents Btn_Fiche_Collabo As Button
     Friend WithEvents Btn_Modification As Button
 End Class
