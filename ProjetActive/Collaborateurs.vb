@@ -51,14 +51,14 @@ Public Class Frm_Collaborateurs
         Call Generation_Liste_Noms()
 
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Btn_Consultation.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         'appel de la fonction Maj_Consultation
         Maj_Consultation()
     End Sub
-    Private Sub Cbx_Nom_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Cbx_Nom.SelectedIndexChanged
+    Private Sub Cbx_Nom_SelectedIndexChanged(sender As Object, e As EventArgs)
         Btn_Rechercher_Nom.Visible = True
     End Sub
-    Private Sub Btn_Rechercher_Nom_Click(sender As Object, e As EventArgs) Handles Btn_Rechercher_Nom.Click
+    Private Sub Btn_Rechercher_Nom_Click(sender As Object, e As EventArgs)
         Dim i_Nb_Nom As Integer = 0
         'Recherche le nom du collaborateur dans la base de données et rempli tous les champs correspondants
         connexion.OUVRIR_CONNEXION("PS_JC_Compte_Nombre_Nom", "@NomCollabo", Cbx_Nom.Text)
@@ -107,10 +107,10 @@ Public Class Frm_Collaborateurs
             If myReader.GetValue(14) = 2 Then
                 RdB_M.Checked = True
                 'RdB_F.Checked = False
-            ElseIf myReader.Getvalue(14) = 1 Then
+            ElseIf myReader.GetValue(14) = 1 Then
                 RdB_F.Checked = True
                 'RdB_M.Checked = False
-            ElseIf myReader.Getvalue(15) = 3 Then
+            ElseIf myReader.GetValue(15) = 3 Then
                 RdB_F.Checked = False
                 RdB_M.Checked = False
             End If
@@ -134,7 +134,7 @@ Public Class Frm_Collaborateurs
             End If
         Loop
     End Sub
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles LstB_Prenoms.SelectedIndexChanged
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
         'Met à jour les champs en fonction du prénom cliqué dans la listBox
         Dim aTableauParam(2, 2) As String
         aTableauParam(0, 0) = "@NomCollabo"
@@ -147,7 +147,7 @@ Public Class Frm_Collaborateurs
         LstB_Prenoms.Visible = False
         Cbx_Nom.Enabled = True
     End Sub
-    Private Sub Btn_Creation_Click(sender As Object, e As EventArgs) Handles Btn_Creation.Click
+    Private Sub Btn_Creation_Click(sender As Object, e As EventArgs)
         'selection et mise en forme du formulaire collaborateurs pour la création
         '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         'Mise en forme des boutons 
@@ -218,7 +218,7 @@ Public Class Frm_Collaborateurs
 
 
     End Sub
-    Private Sub Btn_Valider_Click(sender As Object, e As EventArgs) Handles Btn_Valider.Click
+    Private Sub Btn_Valider_Click(sender As Object, e As EventArgs)
         'Valide la création ou la modification d'un collaborateur
 
         Dim char_Sexe As String = "M"
@@ -328,7 +328,7 @@ Public Class Frm_Collaborateurs
 
         End If
     End Sub
-    Private Sub Cbx_Ville_Validated(sender As Object, e As EventArgs) Handles Cbx_Ville.Validated
+    Private Sub Cbx_Ville_Validated(sender As Object, e As EventArgs)
         'mise à jour de la liste des villes dans le combobox ville
         connexion.OUVRIR_CONNEXION("PS_JC_RECUPERE_CP_VILLE", "@NomVille", Cbx_Ville.Text)
         Do While myReader.Read()
@@ -336,7 +336,7 @@ Public Class Frm_Collaborateurs
         Loop
         connexion.FERMER_CONNEXION()
     End Sub
-    Private Sub DGV_copie(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DGV_Collabo.CellDoubleClick
+    Private Sub DGV_copie(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
         'Clique sur datagridview
         ''''''''''''''''''''''''''''''
         Maj_Consultation()
@@ -362,7 +362,7 @@ Public Class Frm_Collaborateurs
 
 
     End Sub
-    Private Sub Btn_Fiche_Collabo_Click(sender As Object, e As EventArgs) Handles Btn_Fiche_Collabo.Click
+    Private Sub Btn_Fiche_Collabo_Click(sender As Object, e As EventArgs)
         'bascule vers le formulaire fiche collaborateur et mise en forme des boutons 
         TabCtrl_Collabo.SelectedTab = TabP_Collaborateur
         Btn_Fiche_Collabo.Enabled = False
@@ -374,7 +374,7 @@ Public Class Frm_Collaborateurs
         Btn_Liste.ForeColor = Color.White
 
     End Sub
-    Private Sub Btn_Liste_Click(sender As Object, e As EventArgs) Handles Btn_Liste.Click
+    Private Sub Btn_Liste_Click(sender As Object, e As EventArgs)
         'Click sur le bouton Liste
         '''''''''''''''''''''''''''''''''''''
         'bascule vers le formulaire liste et mise en forme des boutons 
@@ -411,10 +411,10 @@ Public Class Frm_Collaborateurs
         DGV_Collabo.Columns.Item(4).Width = 51
 
     End Sub
-    Private Sub DGV_Collabo_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_Collabo.CellContentClick
+    Private Sub DGV_Collabo_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
-    Private Sub Btn_Filtrer_Click(sender As Object, e As EventArgs) Handles Btn_Filtre.Click
+    Private Sub Btn_Filtrer_Click(sender As Object, e As EventArgs)
         'Lance le filtrage du datagridview en fonction du paramètre rentré
         DGV_Collabo.DataSource = ""
 
@@ -440,7 +440,7 @@ Public Class Frm_Collaborateurs
 
     End Sub
 
-    Private Sub Btn_Modification_Click(sender As Object, e As EventArgs) Handles Btn_Modification.Click
+    Private Sub Btn_Modification_Click(sender As Object, e As EventArgs)
         'Mets en forme les controles quand click sur le bouton modifier
         Liberer_controles()
         Btn_Valider.Text = "Modifier"
@@ -464,9 +464,8 @@ Public Class Frm_Collaborateurs
         'Selection du formulaire collaborateur
         TabCtrl_Collabo.SelectedTab = TabP_Collaborateur
 
-
     End Sub
-    Private Sub ProcéduresStockéesToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles ProcéduresStockéesToolStripMenuItem.Click
+    Private Sub ProcéduresStockéesToolStripMenuItem_Click_1(sender As Object, e As EventArgs)
         Frm_Administrateur.Show()
     End Sub
 End Class

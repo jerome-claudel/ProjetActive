@@ -4,11 +4,11 @@
     End Sub
 
     Private Sub Btn_Employes_Click(sender As Object, e As EventArgs) Handles Btn_Employes.Click
-        'Me.Hide()
-        'Frm_Collaborateurs.Show()
+        Me.Hide()
+        Frm_Collaborateurs.Show()
 
     End Sub
-    Private Sub ProcéduresStockéesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProcéduresStockéesToolStripMenuItem.Click
+    Private Sub ProcéduresStockéesToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Frm_Administrateur.Show()
     End Sub
 End Class

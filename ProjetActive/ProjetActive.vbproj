@@ -95,6 +95,12 @@
     <Compile Include="Collaborateurs.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_Administrateur.Designer.vb">
       <DependentUpon>Frm_Administrateur.vb</DependentUpon>
     </Compile>
@@ -134,6 +140,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Collaborateurs.resx">
       <DependentUpon>Collaborateurs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Administrateur.resx">
       <DependentUpon>Frm_Administrateur.vb</DependentUpon>

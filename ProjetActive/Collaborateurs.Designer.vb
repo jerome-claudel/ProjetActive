@@ -22,11 +22,15 @@ Partial Class Frm_Collaborateurs
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Panel_droite = New System.Windows.Forms.Panel()
+        Me.Btn_Creation = New System.Windows.Forms.Button()
+        Me.Btn_Consultation = New System.Windows.Forms.Button()
+        Me.Panel_Gauche = New System.Windows.Forms.Panel()
+        Me.Btn_Employes = New System.Windows.Forms.Button()
+        Me.TabCtrl_Collabo = New System.Windows.Forms.TabControl()
+        Me.TabP_Collaborateur = New System.Windows.Forms.TabPage()
         Me.GBx_1 = New System.Windows.Forms.GroupBox()
         Me.Txt_Matricule = New System.Windows.Forms.TextBox()
         Me.Lbl_Matricule = New System.Windows.Forms.Label()
@@ -53,6 +57,8 @@ Partial Class Frm_Collaborateurs
         Me.Txt_Prenom = New System.Windows.Forms.TextBox()
         Me.Lbl_Prenom = New System.Windows.Forms.Label()
         Me.Lbl_Login = New System.Windows.Forms.Label()
+        Me.Btn_Annuler = New System.Windows.Forms.Button()
+        Me.Btn_Valider = New System.Windows.Forms.Button()
         Me.GBx_Contrat = New System.Windows.Forms.GroupBox()
         Me.Lbl_Fonction = New System.Windows.Forms.Label()
         Me.Cbx_Fonction = New System.Windows.Forms.ComboBox()
@@ -64,107 +70,111 @@ Partial Class Frm_Collaborateurs
         Me.Lbl_DateEmbauche = New System.Windows.Forms.Label()
         Me.Txt_Salaire = New System.Windows.Forms.TextBox()
         Me.Lbl_Salaire = New System.Windows.Forms.Label()
-        Me.Btn_Consultation = New System.Windows.Forms.Button()
-        Me.Btn_Creation = New System.Windows.Forms.Button()
-        Me.Panel_droite = New System.Windows.Forms.Panel()
-        Me.Btn_Modification = New System.Windows.Forms.Button()
-        Me.Btn_Fiche_Collabo = New System.Windows.Forms.Button()
-        Me.Btn_Liste = New System.Windows.Forms.Button()
-        Me.Btn_Valider = New System.Windows.Forms.Button()
-        Me.Btn_Annuler = New System.Windows.Forms.Button()
-        Me.TabCtrl_Collabo = New System.Windows.Forms.TabControl()
-        Me.TabP_Collaborateur = New System.Windows.Forms.TabPage()
         Me.TabP_ListeCollabo = New System.Windows.Forms.TabPage()
         Me.Lbl_Filtre = New System.Windows.Forms.Label()
         Me.Txt_Filtre = New System.Windows.Forms.TextBox()
+        Me.DGV_Collabo = New System.Windows.Forms.DataGridView()
         Me.Cb_Filtre = New System.Windows.Forms.ComboBox()
         Me.Btn_Filtre = New System.Windows.Forms.Button()
-        Me.DGV_Collabo = New System.Windows.Forms.DataGridView()
-        Me.Btn_Employes = New System.Windows.Forms.Button()
-        Me.Panel_Gauche = New System.Windows.Forms.Panel()
-        Me.FrmCollaborateursBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AdministrateurToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProcéduresStockéesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Btn_Liste = New System.Windows.Forms.Button()
+        Me.Btn_Fiche_Collaborateur = New System.Windows.Forms.Button()
+        Me.Btn_Modification = New System.Windows.Forms.Button()
+        Me.Panel_droite.SuspendLayout()
+        Me.Panel_Gauche.SuspendLayout()
+        Me.TabCtrl_Collabo.SuspendLayout()
+        Me.TabP_Collaborateur.SuspendLayout()
         Me.GBx_1.SuspendLayout()
         Me.GBx_Genre.SuspendLayout()
         Me.GBx_Contrat.SuspendLayout()
-        Me.Panel_droite.SuspendLayout()
-        Me.TabCtrl_Collabo.SuspendLayout()
-        Me.TabP_Collaborateur.SuspendLayout()
         Me.TabP_ListeCollabo.SuspendLayout()
         CType(Me.DGV_Collabo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_Gauche.SuspendLayout()
-        CType(Me.FrmCollaborateursBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'Panel_droite
+        '
+        Me.Panel_droite.BackColor = System.Drawing.Color.White
+        Me.Panel_droite.Controls.Add(Me.Btn_Modification)
+        Me.Panel_droite.Controls.Add(Me.Btn_Creation)
+        Me.Panel_droite.Controls.Add(Me.Btn_Consultation)
+        Me.Panel_droite.Location = New System.Drawing.Point(259, 42)
+        Me.Panel_droite.Name = "Panel_droite"
+        Me.Panel_droite.Size = New System.Drawing.Size(219, 761)
+        Me.Panel_droite.TabIndex = 31
+        '
+        'Btn_Creation
+        '
+        Me.Btn_Creation.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Creation.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Creation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Creation.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Creation.ForeColor = System.Drawing.Color.White
+        Me.Btn_Creation.Location = New System.Drawing.Point(33, 112)
+        Me.Btn_Creation.Name = "Btn_Creation"
+        Me.Btn_Creation.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Creation.TabIndex = 14
+        Me.Btn_Creation.Text = "Création"
+        Me.Btn_Creation.UseVisualStyleBackColor = False
+        '
+        'Btn_Consultation
+        '
+        Me.Btn_Consultation.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Consultation.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Consultation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Consultation.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Consultation.ForeColor = System.Drawing.Color.White
+        Me.Btn_Consultation.Location = New System.Drawing.Point(33, 182)
+        Me.Btn_Consultation.Name = "Btn_Consultation"
+        Me.Btn_Consultation.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Consultation.TabIndex = 13
+        Me.Btn_Consultation.Text = "Consultation"
+        Me.Btn_Consultation.UseVisualStyleBackColor = False
+        '
+        'Panel_Gauche
+        '
+        Me.Panel_Gauche.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel_Gauche.Controls.Add(Me.Btn_Employes)
+        Me.Panel_Gauche.Location = New System.Drawing.Point(3, 42)
+        Me.Panel_Gauche.Name = "Panel_Gauche"
+        Me.Panel_Gauche.Size = New System.Drawing.Size(250, 761)
+        Me.Panel_Gauche.TabIndex = 32
+        '
+        'Btn_Employes
+        '
+        Me.Btn_Employes.BackColor = System.Drawing.Color.White
+        Me.Btn_Employes.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Btn_Employes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Employes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Employes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Employes.Location = New System.Drawing.Point(0, 0)
+        Me.Btn_Employes.Name = "Btn_Employes"
+        Me.Btn_Employes.Size = New System.Drawing.Size(250, 57)
+        Me.Btn_Employes.TabIndex = 12
+        Me.Btn_Employes.Text = "Employés"
+        Me.Btn_Employes.UseVisualStyleBackColor = False
+        '
+        'TabCtrl_Collabo
+        '
+        Me.TabCtrl_Collabo.Controls.Add(Me.TabP_Collaborateur)
+        Me.TabCtrl_Collabo.Controls.Add(Me.TabP_ListeCollabo)
+        Me.TabCtrl_Collabo.Location = New System.Drawing.Point(484, 91)
+        Me.TabCtrl_Collabo.Name = "TabCtrl_Collabo"
+        Me.TabCtrl_Collabo.SelectedIndex = 0
+        Me.TabCtrl_Collabo.Size = New System.Drawing.Size(914, 712)
+        Me.TabCtrl_Collabo.TabIndex = 34
+        '
+        'TabP_Collaborateur
+        '
+        Me.TabP_Collaborateur.Controls.Add(Me.Btn_Valider)
+        Me.TabP_Collaborateur.Controls.Add(Me.GBx_1)
+        Me.TabP_Collaborateur.Controls.Add(Me.Btn_Annuler)
+        Me.TabP_Collaborateur.Controls.Add(Me.GBx_Contrat)
+        Me.TabP_Collaborateur.Location = New System.Drawing.Point(4, 22)
+        Me.TabP_Collaborateur.Name = "TabP_Collaborateur"
+        Me.TabP_Collaborateur.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabP_Collaborateur.Size = New System.Drawing.Size(906, 686)
+        Me.TabP_Collaborateur.TabIndex = 0
+        Me.TabP_Collaborateur.Text = "Collaborateur"
+        Me.TabP_Collaborateur.UseVisualStyleBackColor = True
         '
         'GBx_1
         '
@@ -466,6 +476,36 @@ Partial Class Frm_Collaborateurs
         Me.Lbl_Login.Text = "Nom"
         Me.Lbl_Login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Btn_Annuler
+        '
+        Me.Btn_Annuler.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Annuler.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Annuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Annuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Annuler.ForeColor = System.Drawing.Color.White
+        Me.Btn_Annuler.Location = New System.Drawing.Point(675, 623)
+        Me.Btn_Annuler.Name = "Btn_Annuler"
+        Me.Btn_Annuler.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Annuler.TabIndex = 16
+        Me.Btn_Annuler.Text = "Annuler"
+        Me.Btn_Annuler.UseVisualStyleBackColor = False
+        Me.Btn_Annuler.Visible = False
+        '
+        'Btn_Valider
+        '
+        Me.Btn_Valider.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Valider.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Valider.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Valider.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Valider.ForeColor = System.Drawing.Color.White
+        Me.Btn_Valider.Location = New System.Drawing.Point(490, 623)
+        Me.Btn_Valider.Name = "Btn_Valider"
+        Me.Btn_Valider.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Valider.TabIndex = 15
+        Me.Btn_Valider.Text = "Valider"
+        Me.Btn_Valider.UseVisualStyleBackColor = False
+        Me.Btn_Valider.Visible = False
+        '
         'GBx_Contrat
         '
         Me.GBx_Contrat.Controls.Add(Me.Lbl_Fonction)
@@ -480,7 +520,7 @@ Partial Class Frm_Collaborateurs
         Me.GBx_Contrat.Controls.Add(Me.Lbl_Salaire)
         Me.GBx_Contrat.Location = New System.Drawing.Point(80, 437)
         Me.GBx_Contrat.Name = "GBx_Contrat"
-        Me.GBx_Contrat.Size = New System.Drawing.Size(755, 203)
+        Me.GBx_Contrat.Size = New System.Drawing.Size(755, 180)
         Me.GBx_Contrat.TabIndex = 11
         Me.GBx_Contrat.TabStop = False
         Me.GBx_Contrat.Text = "Contrat"
@@ -597,153 +637,17 @@ Partial Class Frm_Collaborateurs
         Me.Lbl_Salaire.Text = "Salaire"
         Me.Lbl_Salaire.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Btn_Consultation
-        '
-        Me.Btn_Consultation.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Consultation.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Consultation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Consultation.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Consultation.ForeColor = System.Drawing.Color.White
-        Me.Btn_Consultation.Location = New System.Drawing.Point(33, 182)
-        Me.Btn_Consultation.Name = "Btn_Consultation"
-        Me.Btn_Consultation.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Consultation.TabIndex = 13
-        Me.Btn_Consultation.Text = "Consultation"
-        Me.Btn_Consultation.UseVisualStyleBackColor = False
-        '
-        'Btn_Creation
-        '
-        Me.Btn_Creation.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Creation.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Creation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Creation.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Creation.ForeColor = System.Drawing.Color.White
-        Me.Btn_Creation.Location = New System.Drawing.Point(33, 112)
-        Me.Btn_Creation.Name = "Btn_Creation"
-        Me.Btn_Creation.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Creation.TabIndex = 14
-        Me.Btn_Creation.Text = "Création"
-        Me.Btn_Creation.UseVisualStyleBackColor = False
-        '
-        'Panel_droite
-        '
-        Me.Panel_droite.BackColor = System.Drawing.Color.White
-        Me.Panel_droite.Controls.Add(Me.Btn_Modification)
-        Me.Panel_droite.Controls.Add(Me.Btn_Creation)
-        Me.Panel_droite.Controls.Add(Me.Btn_Consultation)
-        Me.Panel_droite.Location = New System.Drawing.Point(248, 0)
-        Me.Panel_droite.Name = "Panel_droite"
-        Me.Panel_droite.Size = New System.Drawing.Size(219, 761)
-        Me.Panel_droite.TabIndex = 13
-        '
-        'Btn_Modification
-        '
-        Me.Btn_Modification.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Modification.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Modification.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Modification.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Modification.ForeColor = System.Drawing.Color.White
-        Me.Btn_Modification.Location = New System.Drawing.Point(33, 258)
-        Me.Btn_Modification.Name = "Btn_Modification"
-        Me.Btn_Modification.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Modification.TabIndex = 15
-        Me.Btn_Modification.Text = "Modification"
-        Me.Btn_Modification.UseVisualStyleBackColor = False
-        Me.Btn_Modification.Visible = False
-        '
-        'Btn_Fiche_Collabo
-        '
-        Me.Btn_Fiche_Collabo.BackColor = System.Drawing.Color.White
-        Me.Btn_Fiche_Collabo.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Btn_Fiche_Collabo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Fiche_Collabo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Fiche_Collabo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Fiche_Collabo.Location = New System.Drawing.Point(469, 0)
-        Me.Btn_Fiche_Collabo.Name = "Btn_Fiche_Collabo"
-        Me.Btn_Fiche_Collabo.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Fiche_Collabo.TabIndex = 16
-        Me.Btn_Fiche_Collabo.Text = "Collaborateur"
-        Me.Btn_Fiche_Collabo.UseVisualStyleBackColor = False
-        '
-        'Btn_Liste
-        '
-        Me.Btn_Liste.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Liste.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Liste.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Liste.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Liste.ForeColor = System.Drawing.Color.White
-        Me.Btn_Liste.Location = New System.Drawing.Point(630, 1)
-        Me.Btn_Liste.Name = "Btn_Liste"
-        Me.Btn_Liste.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Liste.TabIndex = 15
-        Me.Btn_Liste.Text = "Liste"
-        Me.Btn_Liste.UseVisualStyleBackColor = False
-        '
-        'Btn_Valider
-        '
-        Me.Btn_Valider.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Valider.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Valider.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Valider.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Valider.ForeColor = System.Drawing.Color.White
-        Me.Btn_Valider.Location = New System.Drawing.Point(490, 655)
-        Me.Btn_Valider.Name = "Btn_Valider"
-        Me.Btn_Valider.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Valider.TabIndex = 15
-        Me.Btn_Valider.Text = "Valider"
-        Me.Btn_Valider.UseVisualStyleBackColor = False
-        Me.Btn_Valider.Visible = False
-        '
-        'Btn_Annuler
-        '
-        Me.Btn_Annuler.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Annuler.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Annuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Annuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Annuler.ForeColor = System.Drawing.Color.White
-        Me.Btn_Annuler.Location = New System.Drawing.Point(675, 655)
-        Me.Btn_Annuler.Name = "Btn_Annuler"
-        Me.Btn_Annuler.Size = New System.Drawing.Size(160, 47)
-        Me.Btn_Annuler.TabIndex = 16
-        Me.Btn_Annuler.Text = "Annuler"
-        Me.Btn_Annuler.UseVisualStyleBackColor = False
-        Me.Btn_Annuler.Visible = False
-        '
-        'TabCtrl_Collabo
-        '
-        Me.TabCtrl_Collabo.Controls.Add(Me.TabP_Collaborateur)
-        Me.TabCtrl_Collabo.Controls.Add(Me.TabP_ListeCollabo)
-        Me.TabCtrl_Collabo.Location = New System.Drawing.Point(468, 27)
-        Me.TabCtrl_Collabo.Name = "TabCtrl_Collabo"
-        Me.TabCtrl_Collabo.SelectedIndex = 0
-        Me.TabCtrl_Collabo.Size = New System.Drawing.Size(914, 734)
-        Me.TabCtrl_Collabo.TabIndex = 17
-        '
-        'TabP_Collaborateur
-        '
-        Me.TabP_Collaborateur.Controls.Add(Me.GBx_1)
-        Me.TabP_Collaborateur.Controls.Add(Me.Btn_Annuler)
-        Me.TabP_Collaborateur.Controls.Add(Me.GBx_Contrat)
-        Me.TabP_Collaborateur.Controls.Add(Me.Btn_Valider)
-        Me.TabP_Collaborateur.Location = New System.Drawing.Point(4, 22)
-        Me.TabP_Collaborateur.Name = "TabP_Collaborateur"
-        Me.TabP_Collaborateur.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabP_Collaborateur.Size = New System.Drawing.Size(906, 708)
-        Me.TabP_Collaborateur.TabIndex = 0
-        Me.TabP_Collaborateur.Text = "Collaborateur"
-        Me.TabP_Collaborateur.UseVisualStyleBackColor = True
-        '
         'TabP_ListeCollabo
         '
         Me.TabP_ListeCollabo.Controls.Add(Me.Lbl_Filtre)
         Me.TabP_ListeCollabo.Controls.Add(Me.Txt_Filtre)
+        Me.TabP_ListeCollabo.Controls.Add(Me.DGV_Collabo)
         Me.TabP_ListeCollabo.Controls.Add(Me.Cb_Filtre)
         Me.TabP_ListeCollabo.Controls.Add(Me.Btn_Filtre)
-        Me.TabP_ListeCollabo.Controls.Add(Me.DGV_Collabo)
         Me.TabP_ListeCollabo.Location = New System.Drawing.Point(4, 22)
         Me.TabP_ListeCollabo.Name = "TabP_ListeCollabo"
         Me.TabP_ListeCollabo.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabP_ListeCollabo.Size = New System.Drawing.Size(906, 708)
+        Me.TabP_ListeCollabo.Size = New System.Drawing.Size(906, 686)
         Me.TabP_ListeCollabo.TabIndex = 1
         Me.TabP_ListeCollabo.Text = "Liste"
         Me.TabP_ListeCollabo.UseVisualStyleBackColor = True
@@ -766,6 +670,30 @@ Partial Class Frm_Collaborateurs
         Me.Txt_Filtre.Size = New System.Drawing.Size(262, 27)
         Me.Txt_Filtre.TabIndex = 32
         Me.Txt_Filtre.Text = "claudel"
+        '
+        'DGV_Collabo
+        '
+        Me.DGV_Collabo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.DGV_Collabo.ColumnHeadersHeight = 30
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.CadetBlue
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_Collabo.DefaultCellStyle = DataGridViewCellStyle1
+        Me.DGV_Collabo.GridColor = System.Drawing.SystemColors.ControlLight
+        Me.DGV_Collabo.Location = New System.Drawing.Point(67, 96)
+        Me.DGV_Collabo.Name = "DGV_Collabo"
+        Me.DGV_Collabo.RowHeadersVisible = False
+        Me.DGV_Collabo.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        Me.DGV_Collabo.RowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGV_Collabo.RowTemplate.DividerHeight = 1
+        Me.DGV_Collabo.RowTemplate.Height = 30
+        Me.DGV_Collabo.Size = New System.Drawing.Size(781, 606)
+        Me.DGV_Collabo.TabIndex = 0
         '
         'Cb_Filtre
         '
@@ -792,922 +720,131 @@ Partial Class Frm_Collaborateurs
         Me.Btn_Filtre.Text = "Filtrer"
         Me.Btn_Filtre.UseVisualStyleBackColor = False
         '
-        'DGV_Collabo
-        '
-        Me.DGV_Collabo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.DGV_Collabo.ColumnHeadersHeight = 30
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.CadetBlue
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_Collabo.DefaultCellStyle = DataGridViewCellStyle13
-        Me.DGV_Collabo.GridColor = System.Drawing.SystemColors.ControlLight
-        Me.DGV_Collabo.Location = New System.Drawing.Point(67, 96)
-        Me.DGV_Collabo.Name = "DGV_Collabo"
-        Me.DGV_Collabo.RowHeadersVisible = False
-        Me.DGV_Collabo.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        Me.DGV_Collabo.RowsDefaultCellStyle = DataGridViewCellStyle14
-        Me.DGV_Collabo.RowTemplate.DividerHeight = 1
-        Me.DGV_Collabo.RowTemplate.Height = 30
-        Me.DGV_Collabo.Size = New System.Drawing.Size(781, 606)
-        Me.DGV_Collabo.TabIndex = 0
-        '
-        'Btn_Employes
-        '
-        Me.Btn_Employes.BackColor = System.Drawing.Color.White
-        Me.Btn_Employes.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Btn_Employes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Employes.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Employes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Employes.Location = New System.Drawing.Point(0, 0)
-        Me.Btn_Employes.Name = "Btn_Employes"
-        Me.Btn_Employes.Size = New System.Drawing.Size(250, 57)
-        Me.Btn_Employes.TabIndex = 12
-        Me.Btn_Employes.Text = "Employés"
-        Me.Btn_Employes.UseVisualStyleBackColor = False
-        '
-        'Panel_Gauche
-        '
-        Me.Panel_Gauche.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel_Gauche.Controls.Add(Me.Btn_Employes)
-        Me.Panel_Gauche.Location = New System.Drawing.Point(0, 42)
-        Me.Panel_Gauche.Name = "Panel_Gauche"
-        Me.Panel_Gauche.Size = New System.Drawing.Size(250, 719)
-        Me.Panel_Gauche.TabIndex = 1
-        '
-        'FrmCollaborateursBindingSource
-        '
-        Me.FrmCollaborateursBindingSource.DataSource = GetType(ProjetActive.Frm_Collaborateurs)
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker2)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Location = New System.Drawing.Point(80, 415)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(755, 175)
-        Me.GroupBox1.TabIndex = 11
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Contrat"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(386, 87)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 20)
-        Me.Label2.TabIndex = 21
-        Me.Label2.Text = "Fonction"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.Enabled = False
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(471, 80)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(269, 28)
-        Me.ComboBox1.TabIndex = 20
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(406, 38)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 20)
-        Me.Label3.TabIndex = 19
-        Me.Label3.Text = "Statut"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.Enabled = False
-        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(471, 30)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(87, 28)
-        Me.ComboBox2.TabIndex = 18
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Enabled = False
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(196, 81)
-        Me.DateTimePicker1.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
-        Me.DateTimePicker1.MinDate = New Date(2019, 1, 1, 0, 0, 0, 0)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.DateTimePicker1.Size = New System.Drawing.Size(140, 26)
-        Me.DateTimePicker1.TabIndex = 17
-        Me.DateTimePicker1.Visible = False
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(30, 87)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(160, 20)
-        Me.Label4.TabIndex = 16
-        Me.Label4.Text = "Date fin de contrat"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'DateTimePicker2
-        '
-        Me.DateTimePicker2.Enabled = False
-        Me.DateTimePicker2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(196, 32)
-        Me.DateTimePicker2.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
-        Me.DateTimePicker2.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(140, 26)
-        Me.DateTimePicker2.TabIndex = 15
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(40, 38)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(150, 20)
-        Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Date d'embauche"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(471, 134)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(157, 24)
-        Me.TextBox1.TabIndex = 12
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(400, 138)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 20)
-        Me.Label6.TabIndex = 13
-        Me.Label6.Text = "Salaire"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(335, 48)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(61, 27)
-        Me.TextBox2.TabIndex = 33
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Enabled = False
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(247, 55)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(82, 20)
-        Me.Label7.TabIndex = 34
-        Me.Label7.Text = "Matricule"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'ListBox1
-        '
-        Me.ListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(426, 90)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(173, 64)
-        Me.ListBox1.TabIndex = 32
-        Me.ListBox1.Visible = False
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(124, 194)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(59, 28)
-        Me.TextBox3.TabIndex = 31
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(426, 90)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 28)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Rechercher"
-        Me.Button1.UseVisualStyleBackColor = False
-        Me.Button1.Visible = False
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox3.Enabled = False
-        Me.ComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(124, 91)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(296, 28)
-        Me.ComboBox3.TabIndex = 30
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(305, 101)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(8, 8)
-        Me.Button2.TabIndex = 29
-        Me.Button2.Text = "Button3"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.RadioButton1)
-        Me.GroupBox2.Controls.Add(Me.RadioButton2)
-        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(124, 19)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(99, 56)
-        Me.GroupBox2.TabIndex = 28
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Genre"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Enabled = False
-        Me.RadioButton1.Location = New System.Drawing.Point(52, 25)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(37, 24)
-        Me.RadioButton1.TabIndex = 29
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "F"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Enabled = False
-        Me.RadioButton2.Location = New System.Drawing.Point(6, 25)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(40, 24)
-        Me.RadioButton2.TabIndex = 28
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "M"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(124, 334)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(333, 27)
-        Me.TextBox4.TabIndex = 26
-        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(65, 341)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(53, 20)
-        Me.Label8.TabIndex = 27
-        Me.Label8.Text = "Email"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Enabled = False
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(124, 288)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(182, 27)
-        Me.TextBox5.TabIndex = 24
-        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(25, 295)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(93, 20)
-        Me.Label9.TabIndex = 25
-        Me.Label9.Text = "Téléphone"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(271, 225)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(26, 13)
-        Me.Label10.TabIndex = 23
-        Me.Label10.Text = "Ville"
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.White
-        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(469, 42)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(160, 47)
-        Me.Button4.TabIndex = 26
-        Me.Button4.Text = "Collaborateur"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(33, 258)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(160, 47)
-        Me.Button5.TabIndex = 15
-        Me.Button5.Text = "Modification"
-        Me.Button5.UseVisualStyleBackColor = False
-        Me.Button5.Visible = False
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(469, 68)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(914, 703)
-        Me.TabControl1.TabIndex = 27
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.GroupBox3)
-        Me.TabPage1.Controls.Add(Me.Button6)
-        Me.TabPage1.Controls.Add(Me.GroupBox1)
-        Me.TabPage1.Controls.Add(Me.Button7)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(906, 677)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Collaborateur"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.TextBox2)
-        Me.GroupBox3.Controls.Add(Me.Label7)
-        Me.GroupBox3.Controls.Add(Me.ListBox1)
-        Me.GroupBox3.Controls.Add(Me.TextBox3)
-        Me.GroupBox3.Controls.Add(Me.Button1)
-        Me.GroupBox3.Controls.Add(Me.ComboBox3)
-        Me.GroupBox3.Controls.Add(Me.Button2)
-        Me.GroupBox3.Controls.Add(Me.GroupBox2)
-        Me.GroupBox3.Controls.Add(Me.TextBox4)
-        Me.GroupBox3.Controls.Add(Me.Label8)
-        Me.GroupBox3.Controls.Add(Me.TextBox5)
-        Me.GroupBox3.Controls.Add(Me.Label9)
-        Me.GroupBox3.Controls.Add(Me.Label10)
-        Me.GroupBox3.Controls.Add(Me.Label11)
-        Me.GroupBox3.Controls.Add(Me.Label12)
-        Me.GroupBox3.Controls.Add(Me.Label13)
-        Me.GroupBox3.Controls.Add(Me.ComboBox4)
-        Me.GroupBox3.Controls.Add(Me.ComboBox5)
-        Me.GroupBox3.Controls.Add(Me.TextBox6)
-        Me.GroupBox3.Controls.Add(Me.Label14)
-        Me.GroupBox3.Controls.Add(Me.TextBox7)
-        Me.GroupBox3.Controls.Add(Me.Label15)
-        Me.GroupBox3.Controls.Add(Me.Label16)
-        Me.GroupBox3.Location = New System.Drawing.Point(80, 26)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(755, 383)
-        Me.GroupBox3.TabIndex = 10
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Coordonnées"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(126, 225)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(64, 13)
-        Me.Label11.TabIndex = 22
-        Me.Label11.Text = "Code Postal"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(195, 178)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(67, 13)
-        Me.Label12.TabIndex = 21
-        Me.Label12.Text = "Nom de voie"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(124, 178)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(19, 13)
-        Me.Label13.TabIndex = 19
-        Me.Label13.Text = "N°"
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.Enabled = False
-        Me.ComboBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(271, 241)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(328, 28)
-        Me.ComboBox4.TabIndex = 18
-        '
-        'ComboBox5
-        '
-        Me.ComboBox5.Enabled = False
-        Me.ComboBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(124, 241)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(138, 28)
-        Me.ComboBox5.TabIndex = 17
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Enabled = False
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(193, 194)
-        Me.TextBox6.Multiline = True
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(406, 28)
-        Me.TextBox6.TabIndex = 16
-        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(43, 192)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(75, 20)
-        Me.Label14.TabIndex = 13
-        Me.Label14.Text = "Adresse"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Enabled = False
-        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(124, 138)
-        Me.TextBox7.Multiline = True
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(262, 27)
-        Me.TextBox7.TabIndex = 10
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(48, 145)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(70, 20)
-        Me.Label15.TabIndex = 11
-        Me.Label15.Text = "Prénom"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(73, 101)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(45, 20)
-        Me.Label16.TabIndex = 9
-        Me.Label16.Text = "Nom"
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(675, 617)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(160, 47)
-        Me.Button6.TabIndex = 16
-        Me.Button6.Text = "Annuler"
-        Me.Button6.UseVisualStyleBackColor = False
-        Me.Button6.Visible = False
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(490, 617)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(160, 47)
-        Me.Button7.TabIndex = 15
-        Me.Button7.Text = "Valider"
-        Me.Button7.UseVisualStyleBackColor = False
-        Me.Button7.Visible = False
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.Label17)
-        Me.TabPage2.Controls.Add(Me.TextBox8)
-        Me.TabPage2.Controls.Add(Me.ComboBox6)
-        Me.TabPage2.Controls.Add(Me.Button8)
-        Me.TabPage2.Controls.Add(Me.DataGridView1)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(906, 708)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Liste"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(103, 38)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(50, 13)
-        Me.Label17.TabIndex = 33
-        Me.Label17.Text = "Filtrer par"
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(390, 55)
-        Me.TextBox8.Multiline = True
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(262, 27)
-        Me.TextBox8.TabIndex = 32
-        Me.TextBox8.Text = "claudel"
-        '
-        'ComboBox6
-        '
-        Me.ComboBox6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ComboBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(106, 54)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(257, 28)
-        Me.ComboBox6.TabIndex = 31
-        Me.ComboBox6.Text = "Nom"
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.White
-        Me.Button8.Location = New System.Drawing.Point(674, 44)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(160, 38)
-        Me.Button8.TabIndex = 16
-        Me.Button8.Text = "Filtrer"
-        Me.Button8.UseVisualStyleBackColor = False
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.DataGridView1.ColumnHeadersHeight = 30
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.CadetBlue
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle15
-        Me.DataGridView1.GridColor = System.Drawing.SystemColors.ControlLight
-        Me.DataGridView1.Location = New System.Drawing.Point(67, 96)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle16
-        Me.DataGridView1.RowTemplate.DividerHeight = 1
-        Me.DataGridView1.RowTemplate.Height = 30
-        Me.DataGridView1.Size = New System.Drawing.Size(781, 606)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.ForeColor = System.Drawing.Color.White
-        Me.Button9.Location = New System.Drawing.Point(33, 112)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(160, 47)
-        Me.Button9.TabIndex = 14
-        Me.Button9.Text = "Création"
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'Button10
-        '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.ForeColor = System.Drawing.Color.White
-        Me.Button10.Location = New System.Drawing.Point(33, 182)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(160, 47)
-        Me.Button10.TabIndex = 13
-        Me.Button10.Text = "Consultation"
-        Me.Button10.UseVisualStyleBackColor = False
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Button11)
-        Me.Panel1.Location = New System.Drawing.Point(1, 154)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(250, 617)
-        Me.Panel1.TabIndex = 23
-        '
-        'Button11
-        '
-        Me.Button11.BackColor = System.Drawing.Color.White
-        Me.Button11.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button11.Location = New System.Drawing.Point(0, 39)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(250, 57)
-        Me.Button11.TabIndex = 12
-        Me.Button11.Text = "Employés"
-        Me.Button11.UseVisualStyleBackColor = False
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.Button5)
-        Me.Panel2.Controls.Add(Me.Button9)
-        Me.Panel2.Controls.Add(Me.Button10)
-        Me.Panel2.Location = New System.Drawing.Point(255, 42)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(210, 729)
-        Me.Panel2.TabIndex = 24
-        '
-        'Button12
-        '
-        Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.ForeColor = System.Drawing.Color.White
-        Me.Button12.Location = New System.Drawing.Point(631, 42)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(160, 47)
-        Me.Button12.TabIndex = 25
-        Me.Button12.Text = "Liste"
-        Me.Button12.UseVisualStyleBackColor = False
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OptionsToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1384, 25)
-        Me.MenuStrip1.TabIndex = 28
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'OptionsToolStripMenuItem
-        '
-        Me.OptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrateurToolStripMenuItem})
-        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(66, 21)
-        Me.OptionsToolStripMenuItem.Text = "Options"
-        '
-        'AdministrateurToolStripMenuItem
-        '
-        Me.AdministrateurToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProcéduresStockéesToolStripMenuItem})
-        Me.AdministrateurToolStripMenuItem.Name = "AdministrateurToolStripMenuItem"
-        Me.AdministrateurToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AdministrateurToolStripMenuItem.Text = "Administrateur"
-        '
-        'ProcéduresStockéesToolStripMenuItem
-        '
-        Me.ProcéduresStockéesToolStripMenuItem.Name = "ProcéduresStockéesToolStripMenuItem"
-        Me.ProcéduresStockéesToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.ProcéduresStockéesToolStripMenuItem.Text = "Procédures stockées"
+        'Btn_Liste
+        '
+        Me.Btn_Liste.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Liste.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Liste.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Liste.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Liste.ForeColor = System.Drawing.Color.White
+        Me.Btn_Liste.Location = New System.Drawing.Point(650, 38)
+        Me.Btn_Liste.Name = "Btn_Liste"
+        Me.Btn_Liste.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Liste.TabIndex = 35
+        Me.Btn_Liste.Text = "Liste"
+        Me.Btn_Liste.UseVisualStyleBackColor = False
+        '
+        'Btn_Fiche_Collaborateur
+        '
+        Me.Btn_Fiche_Collaborateur.BackColor = System.Drawing.Color.White
+        Me.Btn_Fiche_Collaborateur.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Btn_Fiche_Collaborateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Fiche_Collaborateur.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Fiche_Collaborateur.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Fiche_Collaborateur.Location = New System.Drawing.Point(484, 38)
+        Me.Btn_Fiche_Collaborateur.Name = "Btn_Fiche_Collaborateur"
+        Me.Btn_Fiche_Collaborateur.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Fiche_Collaborateur.TabIndex = 38
+        Me.Btn_Fiche_Collaborateur.Text = "Collaborateur"
+        Me.Btn_Fiche_Collaborateur.UseVisualStyleBackColor = False
+        '
+        'Btn_Modification
+        '
+        Me.Btn_Modification.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Modification.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Modification.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Modification.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Modification.ForeColor = System.Drawing.Color.White
+        Me.Btn_Modification.Location = New System.Drawing.Point(33, 256)
+        Me.Btn_Modification.Name = "Btn_Modification"
+        Me.Btn_Modification.Size = New System.Drawing.Size(160, 47)
+        Me.Btn_Modification.TabIndex = 16
+        Me.Btn_Modification.Text = "Modification"
+        Me.Btn_Modification.UseVisualStyleBackColor = False
+        Me.Btn_Modification.Visible = False
         '
         'Frm_Collaborateurs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1384, 780)
-        Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.Panel2)
+        Me.ClientSize = New System.Drawing.Size(1447, 824)
+        Me.Controls.Add(Me.Btn_Fiche_Collaborateur)
+        Me.Controls.Add(Me.Btn_Liste)
+        Me.Controls.Add(Me.TabCtrl_Collabo)
         Me.Controls.Add(Me.Panel_Gauche)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.Controls.Add(Me.Panel_droite)
         Me.Name = "Frm_Collaborateurs"
         Me.Text = "Collaborateurs"
+        Me.Panel_droite.ResumeLayout(False)
+        Me.Panel_Gauche.ResumeLayout(False)
+        Me.TabCtrl_Collabo.ResumeLayout(False)
+        Me.TabP_Collaborateur.ResumeLayout(False)
         Me.GBx_1.ResumeLayout(False)
         Me.GBx_1.PerformLayout()
         Me.GBx_Genre.ResumeLayout(False)
         Me.GBx_Genre.PerformLayout()
         Me.GBx_Contrat.ResumeLayout(False)
         Me.GBx_Contrat.PerformLayout()
-        Me.Panel_droite.ResumeLayout(False)
-        Me.TabCtrl_Collabo.ResumeLayout(False)
-        Me.TabP_Collaborateur.ResumeLayout(False)
         Me.TabP_ListeCollabo.ResumeLayout(False)
         Me.TabP_ListeCollabo.PerformLayout()
         CType(Me.DGV_Collabo, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_Gauche.ResumeLayout(False)
-        CType(Me.FrmCollaborateursBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents Panel_droite As Panel
+    Friend WithEvents Btn_Creation As Button
+    Friend WithEvents Btn_Consultation As Button
+    Friend WithEvents Panel_Gauche As Panel
+    Friend WithEvents Btn_Employes As Button
+    Friend WithEvents TabCtrl_Collabo As TabControl
+    Friend WithEvents TabP_Collaborateur As TabPage
     Friend WithEvents GBx_1 As GroupBox
-    Friend WithEvents Txt_Prenom As TextBox
-    Friend WithEvents Lbl_Prenom As Label
-    Friend WithEvents Lbl_Adresse As Label
-    Friend WithEvents Cbx_Ville As ComboBox
-    Friend WithEvents Cbx_CodePostal As ComboBox
-    Friend WithEvents Txt_NomVoie As TextBox
+    Friend WithEvents Txt_Matricule As TextBox
+    Friend WithEvents Lbl_Matricule As Label
+    Friend WithEvents LstB_Prenoms As ListBox
+    Friend WithEvents Txt_Numero As TextBox
+    Friend WithEvents Btn_Rechercher_Nom As Button
+    Friend WithEvents Cbx_Nom As ComboBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents GBx_Genre As GroupBox
+    Friend WithEvents RdB_F As RadioButton
+    Friend WithEvents RdB_M As RadioButton
+    Friend WithEvents Txt_Email As TextBox
+    Friend WithEvents Lbl_Email As Label
+    Friend WithEvents Txt_Telephone As TextBox
+    Friend WithEvents Lbl_Telephone As Label
     Friend WithEvents Lbl_Ville As Label
     Friend WithEvents Lbl_Code_Postal As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Lbl_nulmero As Label
-    Friend WithEvents Txt_Telephone As TextBox
-    Friend WithEvents Lbl_Telephone As Label
-    Friend WithEvents Txt_Email As TextBox
-    Friend WithEvents Lbl_Email As Label
-    Friend WithEvents GBx_Genre As GroupBox
-    Friend WithEvents RdB_M As RadioButton
-    Friend WithEvents RdB_F As RadioButton
+    Friend WithEvents Cbx_Ville As ComboBox
+    Friend WithEvents Cbx_CodePostal As ComboBox
+    Friend WithEvents Txt_NomVoie As TextBox
+    Friend WithEvents Lbl_Adresse As Label
+    Friend WithEvents Txt_Prenom As TextBox
+    Friend WithEvents Lbl_Prenom As Label
+    Friend WithEvents Lbl_Login As Label
+    Friend WithEvents Btn_Annuler As Button
+    Friend WithEvents Btn_Valider As Button
     Friend WithEvents GBx_Contrat As GroupBox
-    Friend WithEvents Dtp_DateEmbauche As DateTimePicker
-    Friend WithEvents Lbl_DateEmbauche As Label
-    Friend WithEvents Txt_Salaire As TextBox
-    Friend WithEvents Lbl_Salaire As Label
-    Friend WithEvents Dtp_DateFinContrat As DateTimePicker
-    Friend WithEvents Lbl_DateFinContrat As Label
-    Friend WithEvents Btn_Consultation As Button
-    Friend WithEvents Btn_Creation As Button
-    Friend WithEvents Panel_droite As Panel
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Btn_Rechercher_Nom As Button
-    Friend WithEvents Txt_Numero As TextBox
-    Friend WithEvents LstB_Prenoms As ListBox
     Friend WithEvents Lbl_Fonction As Label
     Friend WithEvents Cbx_Fonction As ComboBox
     Friend WithEvents Lbl_Statut As Label
     Friend WithEvents Cbx_Statut As ComboBox
-    Friend WithEvents Btn_Valider As Button
-    Friend WithEvents Btn_Annuler As Button
-    Friend WithEvents Txt_Matricule As TextBox
-    Friend WithEvents Lbl_Matricule As Label
-    Friend WithEvents Cbx_Nom As ComboBox
-    Friend WithEvents Lbl_Login As Label
-    Friend WithEvents TabCtrl_Collabo As TabControl
-    Friend WithEvents TabP_Collaborateur As TabPage
+    Friend WithEvents Dtp_DateFinContrat As DateTimePicker
+    Friend WithEvents Lbl_DateFinContrat As Label
+    Friend WithEvents Dtp_DateEmbauche As DateTimePicker
+    Friend WithEvents Lbl_DateEmbauche As Label
+    Friend WithEvents Txt_Salaire As TextBox
+    Friend WithEvents Lbl_Salaire As Label
     Friend WithEvents TabP_ListeCollabo As TabPage
-    Friend WithEvents DGV_Collabo As DataGridView
-    Friend WithEvents Btn_Liste As Button
-    Friend WithEvents Btn_Filtre As Button
-    Friend WithEvents Btn_Fiche_Collabo As Button
-    Friend WithEvents Txt_Filtre As TextBox
-    Friend WithEvents Cb_Filtre As ComboBox
     Friend WithEvents Lbl_Filtre As Label
+    Friend WithEvents Txt_Filtre As TextBox
+    Friend WithEvents DGV_Collabo As DataGridView
+    Friend WithEvents Cb_Filtre As ComboBox
+    Friend WithEvents Btn_Filtre As Button
+    Friend WithEvents Btn_Liste As Button
+    Friend WithEvents Btn_Fiche_Collaborateur As Button
     Friend WithEvents Btn_Modification As Button
-    Friend WithEvents FrmCollaborateursBindingSource As BindingSource
-    Friend WithEvents Btn_Employes As Button
-    Friend WithEvents Panel_Gauche As Panel
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents Label4 As Label
-    Friend WithEvents DateTimePicker2 As DateTimePicker
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents Label17 As Label
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents Button8 As Button
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents BindingSource1 As BindingSource
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button12 As Button
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AdministrateurToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ProcéduresStockéesToolStripMenuItem As ToolStripMenuItem
 End Class
